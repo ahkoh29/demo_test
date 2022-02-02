@@ -3,7 +3,7 @@ public class Demo{
         int index =0, counter=0;
         while(index<word.length() && word.indexOf(find, index)!=-1){
             counter++;
-            index = word.indexOf(find, index) + word.length();
+            index = word.indexOf(find, index) + find.length();
         }
         return counter;
     }
